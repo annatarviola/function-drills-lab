@@ -161,7 +161,18 @@ console.log('declaration')
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name) {
+  name = String(name)
+  if (name === `Steven`) {
+    return `What is up Steven?`
+  } else if (name === `Bryan`) {
+    return `Hey Bryan!`
+  } else {
+    return `Cool name, ${name}`
+  }
+}
+
+nameGreeting = nameCheck(`Aerith`)
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -174,19 +185,37 @@ console.log('declaration')
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color) {
+  color = String(color)
+  if (color === 'red') {
+    return `red is a great color`
+  } else if (color === 'green') {
+    return `green is a solid favorite color`
+  } else if (color === 'black') {
+    return `so trendy`
+  } else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}
 
+let colorRating = faveColorFinder(`puce`)
+console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
-let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
+let namesArr = ['Tifa', 'Barret', 'Red XIII', 'Yuffie', 'Vincent']
 /*
   Create a function called printAllNames that takes in a single argument (an array of names).
   Using a for loop, iterate over that array and console log each name.
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+function printAllNames(names) {
+  for (let i = 0; i < names.length; i++) {
+    console.log(names[i])
+  }
+}
 
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
