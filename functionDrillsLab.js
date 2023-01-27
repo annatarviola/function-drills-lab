@@ -50,7 +50,7 @@ printName(`Sephiroth`)
 */
 
 function greeting(name) {
-  String(name)
+  name = String(name)
   console.log(`Hello, ${name}`)
 }
  
@@ -67,7 +67,7 @@ greeting(`Cloud`)
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-const compareNums = (num1, num2) => {
+const compareNumsReg = (num1, num2) => {
   if (num1 > num2) {
     return num1
   } else {
@@ -75,6 +75,9 @@ const compareNums = (num1, num2) => {
   }
 }
 
+// TERNARY STATEMENT VER:
+
+const compareNumsTer = (num1, num2) => num1 > num2 ? num1 : num2
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -84,8 +87,13 @@ const compareNums = (num1, num2) => {
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add (num1, num2) {
+  num1 = +num1
+  num2= +num2
+  return num1 + num2
+}
 
+let sum = add(13, 69)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -100,7 +108,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -115,7 +123,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -126,7 +134,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+const exclaimThree = str => `${str.toUpperCase()}!!!`
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -140,7 +148,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
